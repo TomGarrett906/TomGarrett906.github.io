@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Garrett</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="queries.css">
+</head>
+<body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='./#profile'">Tom Garrett</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='./#profile'">Tom Garrett</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+
+    </nav>
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assests/profile-pic2.png" alt="logo picture" class="profile-pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Tom Garrett</h1>
+            <p class="section-text-p2"> a Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color2" onclick="window.open('./assests/THOMAS_GARRETT-Tech_Resume.pdf')">Download Resume</button>
+            <div class="btn-container">
+                <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/thomas-garrett/'">
+                <img src="./assests/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/TomGarrett906'">
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#about'">
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#profile'">
+        <p class="section-text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assests/profile-pic.png" alt="profile picture" class="profile-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assests/languages.png" alt="certificate icon" class="icon">
+                        <h3>Languages</h3>
+                        <p>HTML, CSS, Python, SQL, JavaScript, TypeScript</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/technologies.png" alt="education icon" class="icon">
+                        <h3>Technologies</h3>
+                        <p>GitHub, PostgreSQL, Flask, Node JS, Bootstrap, React</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Software engineering graduate from Coding Temple,
+                        deeply passionate about crafting impactful web applications. Seeking to leverage skills in both front-end and
+                        back-end development as a Full Stack Developer to
+                        contribute positively to the tech landscape.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#skills'">
+    </section>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#about'">
+        <p class="section-text-p1">Check Out My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/badges/html-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/badges/css-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests//badges/python-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/badges/sql-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/badges/javascript-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/typescript.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/github.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/postgresql.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests//badges/flask-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/badges/nodejs-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/bootstrap.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/badges/react-certified.png" alt="badge icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Certified</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#projects'">
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#skills'">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container ">
+            <div class="about-container">
+            <!-- WEATHER APP -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/weather.png" alt="Weather App" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Weather App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="location.href='https://github.com/TomGarrett906/weather-app'">GitHub</button>
+                    <button class="btn btn-color2" onclick="location.href=''">Demo</button>
+                </div>
+            </div>
+            <!-- F1 API -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/formulaone.png" alt="Formula One API" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Formula One API</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="location.href=''">GitHub</button>
+                    <button class="btn btn-color2" onclick="location.href=''">Demo</button>
+                </div>
+            </div>
+            <!-- GIG TRAKR -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assests/dj.png" alt="Gig Tracker" class="project-img">
+                </div>
+                <h2 class="skills-sub-title project-title">Gig Trakr</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color2" onclick="location.href=''">GitHub</button>
+                    <button class="btn btn-color2" onclick="location.href=''">Demo</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#contact'">
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#projects'">
+        <p class="section-text-p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:TomGarrett906@gmail.com">TomGarrett906@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/thomas-garrett">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Tom Garrett. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
