@@ -258,7 +258,7 @@ section {
     cursor: pointer;
     height: 2rem;
     color: #f7c857;
-    background: white;
+    background: rgb(247, 247, 247);
     border-radius: 5px;
   
 }
