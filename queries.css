@@ -61,8 +61,26 @@
         height: 40vh;
     }
     #profile {
-        height: 83vh;
+        margin-top: -10vh;
+        height: 100vh;
         margin-bottom: 0;
+    }
+    #about {
+        margin-top: -15vh;
+        top: 1px;
+    }
+    
+    #skills {
+        margin-top: -12vh;
+    }
+    #projects {
+        margin-top: -12vh;
+    }
+    #contact {
+        margin-top: -8vh;
+    }
+    #projects .about-container{
+        margin-top: -20vh;
     }
     article {
         font-size: 1rem;

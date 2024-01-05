@@ -183,11 +183,61 @@ a:hover {
     transform: none;
 }
 
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    color: #f7c857;
+    background: rgb(247, 247, 247);
+    border-radius: 5px;
+  
+}
+
+.icon:hover {
+    scale: 120%;
+    transition-duration: 500ms;
+    background: #f7c857;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 1.5rem;
+    
+}
+
+.btn-color1,
+.btn-color2 {
+    border: #86b8ff 1px inset;
+    background: #0a192f;
+    color: white;
+}
+
+.btn-color1:hover,
+.btn-color2:hover {
+    cursor: pointer;
+    background-color: rgb(53,53,53);
+    color: #f7c857;
+}
+
+
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+
+    height: 90vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -202,7 +252,7 @@ section {
 #profile {
     position: relative;
     display: flex;
-    padding-top: 10rem;
+    padding-top: 10vh;
     justify-content: center;
     gap: 5rem;
     background-color: #1a1a1a;
@@ -252,53 +302,6 @@ section {
     gap: 1rem;
 }
 
-/* ICONS */
-
-.icon {
-    cursor: pointer;
-    height: 2rem;
-    color: #f7c857;
-    background: rgb(247, 247, 247);
-    border-radius: 5px;
-  
-}
-
-.icon:hover {
-    scale: 120%;
-    transition-duration: 500ms;
-    background: #f7c857;
-}
-
-/* BUTTONS */
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 1.5rem;
-    
-}
-
-.btn-color1,
-.btn-color2 {
-    border: #86b8ff 1px inset;
-    background: #0a192f;
-    color: white;
-}
-
-.btn-color1:hover,
-.btn-color2:hover {
-    cursor: pointer;
-    background-color: rgb(53,53,53);
-    color: #f7c857;
-}
 
 /* ABOUT SECTION */
 
@@ -414,16 +417,16 @@ article .icon {
 
 #projects {
     position: relative;
-    padding-top: 10rem;
+    padding-top: 10vh;
 }
 
-#projects .title {
-    margin-top: 2rem; /* Adjust margin as needed */
-}
+/* #projects .title {
+    margin-top: 2rem;
+} */
 
 #projects .section-text-p1 {
-    color: rgb(85, 85, 85);
-    margin-top: 2rem; /* Adjust margin as needed */
+
+    margin-top: 2rem; 
 }
 
 .projects-container {
