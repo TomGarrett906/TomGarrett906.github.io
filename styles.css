@@ -202,6 +202,9 @@ a:hover {
 }
 
 /* BUTTONS */
+/* .title-icon {
+    scale: 120%;
+} */
 
 .btn-container {
     display: flex;
