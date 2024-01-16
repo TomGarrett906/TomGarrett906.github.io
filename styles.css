@@ -268,7 +268,7 @@ section {
     margin: auto 0;
 }
 
-.profile-pic {
+#profile .profile-pic {
     border-radius: 50%;
     border: #f7c857 1px ridge;
 }
@@ -296,6 +296,22 @@ section {
     font-size: 3rem;
     text-align: center;
     color: white;
+}
+
+.logo .icon {
+    scale: 145%;
+    border: 1px #fff ridge;
+    margin-right: 1rem;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.logo .icon:hover {
+    scale: 155%;
+    border: 1px #f7c857 ridge;
+    margin-right: 1rem;
+    justify-content: center;
+    border-radius: 6px;
 }
 
 #social-container {
@@ -330,7 +346,7 @@ section {
     justify-content: center;
 }
 
-.profile-pic {
+# about .profile-pic {
     border-radius: 2rem;
 }
 
