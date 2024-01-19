@@ -25,6 +25,7 @@ a, btn {
     transition: all 300ms ease;
 }
 
+
 /* DESKTOP NAV */
 nav, 
 .nav-links {
@@ -202,9 +203,7 @@ a:hover {
 }
 
 /* BUTTONS */
-/* .title-icon {
-    scale: 120%;
-} */
+
 
 .btn-container {
     display: flex;
@@ -223,16 +222,20 @@ a:hover {
 
 .btn-color1,
 .btn-color2 {
-    border: #86b8ff 1px inset;
-    background: #0a192f;
-    color: white;
+    border: #f7c857 1px inset;
+    background: #86b8ff;
+    color: #0a192f;
 }
 
 .btn-color1:hover,
 .btn-color2:hover {
     cursor: pointer;
-    background-color: rgb(53,53,53);
+    background-color: #0a192f;
+    border: #f7c857 1px inset;
     color: #f7c857;
+    scale: 105%;
+    transition: 800ms;
+    box-shadow: 0 2px 8px 0 #f7c857;
 }
 
 
@@ -299,7 +302,7 @@ section {
 }
 
 .logo .icon {
-    scale: 145%;
+    scale: 115%;
     border: 1px #fff ridge;
     margin-right: 2rem;
     justify-content: center;
@@ -307,11 +310,13 @@ section {
 }
 
 .logo .icon:hover {
-    scale: 155%;
+    scale: 125%;
     border: 1px #f7c857 ridge;
-    margin-right: 1rem;
+    margin-right: 2rem;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 50%;
+    rotate: 720deg;
+    transition: 2s;
 }
 
 #social-container {
@@ -338,6 +343,10 @@ section {
 .about-details-container {
     justify-content: center;
     flex-direction: column;
+}
+
+#about .details-container {
+    border-color: #f7c75788;
 }
 
 .about-container,
@@ -367,8 +376,8 @@ section {
     flex: wrap;
     background: #0a192f;
     border-radius: 2rem;
-    border: rgb(53,53,53) 1px solid;
-    border-color: #86b8ff;
+    border: #f7c857 2px solid;
+    border-color: #f7c857;
     text-align: center;
     justify-content: center;
     color: #f7c857;
@@ -394,6 +403,10 @@ section {
     padding-top: 10rem;
 }
 
+#skills .details-container {
+    border-color: #f7c75788;
+}
+
 #h3 {
     color: #f7c857;
 }
@@ -410,6 +423,7 @@ section {
     justify-content: center;
     flex-direction: column;
     padding-top: 2rem;
+    
 }
 
 .article-container {
@@ -439,9 +453,20 @@ article .icon {
     padding-top: 10vh;
 }
 
-/* #projects .title {
-    margin-top: 2rem;
-} */
+#projects .details-container {
+    background-color: #0a192f;
+    border-color: #f7c75788;
+}
+
+#projects .details-container:hover {
+    scale: 103%;
+    transition: 800ms;
+    box-shadow: 0 5px 20px 0 #f7c857;
+}
+
+#projects .details-container h2 {
+    color: #f7c857;
+}
 
 #projects .section-text-p1 {
 
@@ -491,6 +516,7 @@ article .icon {
 
 .contact-info-upper-container {
     display: flex;
+
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53,53,53) 2px inset;
