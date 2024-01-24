@@ -23,6 +23,9 @@
     .section-container {
         display: block;
     }
+    #projects .about-container {
+        scale: 50%
+    }
     .arrow,
     .uparrow {
         display: none;
