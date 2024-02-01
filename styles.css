@@ -2,6 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&display=swap');
 
+/* LIGHT MODE */
+:root {
+    --background-color: white;
+    --navbar-color: #1a1a1a;
+    --hamburger-menu-color: #86b8ff;
+    --border-color: #0a192f;
+    --container-color: #f7c857;
+    --button-color-1: #0a192f;
+    --button-color-2: #0a192f;
+    --button-hover-text: ;
+    --button-hover-color: ;
+    --text-color-1: #000;
+    --text-color-2: #1a1a1a;
+    --text-color-3: #fff;
+    --text-hover-color: #f7c857;
+    --icon-background-color: ;
+    --icon-hover-background-color: #f7c857;
+    
+}
+
+/* DARK MODE */
+[theme="dark"] {
+    --background-color: #1a1a1a;
+    --navbar-color: #0a192f;
+    --hamburger-menu-color: #2d4567;
+    --border-color: #f7c857;
+    --container-color: #0a192f;
+    --button-color-1: #86b8ff;
+    --button-color-2: #86b8ff;
+    --button-hover-text: ;
+    --button-hover-color: ;
+    --text-color-1: #fff;
+    --text-color-2: rgb(198, 198, 198);
+    --text-color-3: #000;
+    --text-hover-color: #f7c857;
+    --icon-background-color: ;
+    --icon-hover-background-color: #f7c857;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +50,7 @@
 
 body {
     font-family: 'Exo 2', sans-serif;
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
 }
 
 html {
@@ -17,7 +58,7 @@ html {
 }
 
 p {
-    color: rgb(198, 198, 198);
+    color: var(--text-color-2);
 }
 
 /* TRANSITION */
@@ -43,9 +84,9 @@ nav {
 #hamburger-nav {
     position: sticky;
     top: 0;
-    border-bottom: #f7c857 2px solid;
-    background-color: #0a192f;
-    color: white;
+    border-bottom: var(--border-color) 2px solid;
+    background-color: var(--navbar-color);
+    color: var(--text-color-3);
     z-index: 100;
 }
 
@@ -56,17 +97,17 @@ nav {
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: var(--text-color-3);
     text-decoration: none;
-    text-decoration-color: white;
+    /* text-decoration-color: var(--text-color-1); */
 }
 
 .hamburger-icon a:hover {
-    color: #f7c857;
+    color: var(--icon-hover-background-color);
 }
 
 a:hover {
-    color: #f7c857;
+    color: var(--text-hover-color);
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181.181,181);
@@ -81,7 +122,7 @@ a:hover {
     cursor: pointer;
     scale: 110%;
     transition: 1000ms ease-in-out;
-    color: #f7c857;
+    color: var(--text-hover-color);
 }
 
 /* HAMBURGER MENU */
@@ -105,14 +146,14 @@ a:hover {
 }
 
 .hamburger-icon:hover {
-    color: #f7c857;
+    color: var(--icon-hover-background-color);
 }
 
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--hamburger-menu-color);
     transition: all 0.3 ease-in-out;
 }
 
@@ -120,7 +161,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0%;
-    background-color: white;
+    background-color: var(--text-color-1);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -132,7 +173,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: var(--text-color-1);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -144,15 +185,15 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
-    border: #f7c857 2px outset;
+    border: var(--text-hover-color) 2px outset;
     border-radius: 1rem;
     margin-top: 1rem;
     right: -2.75rem;
-    background: #86b8ff;
+    background: var(--hamburger-menu-color);
 }
 
 .menu-links.open a:hover {
-    color: #f7c857;
+    color: var(--text-hover-color);
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
@@ -191,7 +232,7 @@ a:hover {
     cursor: pointer;
     height: 2rem;
     color: #f7c857;
-    background: rgb(247, 247, 247);
+    background: var(--icon-background-color);
     border-radius: 5px;
   
 }
@@ -199,7 +240,7 @@ a:hover {
 .icon:hover {
     scale: 120%;
     transition-duration: 500ms;
-    background: #f7c857;
+    background: var(--icon-hover-background-color);
 }
 
 /* BUTTONS */
@@ -222,27 +263,26 @@ a:hover {
 
 .btn-color1,
 .btn-color2 {
-    border: #f7c857 1px inset;
-    background: #86b8ff;
-    color: #0a192f;
+    border: var(--border-color) 1px inset;
+    background: var(--navbar-color);
+    color: var(--text-color-3);
 }
 
 .btn-color1:hover,
 .btn-color2:hover {
     cursor: pointer;
-    background-color: #0a192f;
-    border: #f7c857 1px inset;
-    color: #f7c857;
+    background-color: var(--button-hover-color);
+    border: var(--border-color) 1px inset;
+    color: var(--text-hover-color);
     scale: 105%;
     transition: 800ms;
-    box-shadow: 0 2px 8px 0 #f7c857;
+    box-shadow: 0 2px 8px 0 var(--border-color);
 }
 
 
 /* SECTIONS */
 
 section {
-
     height: 90vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -261,7 +301,7 @@ section {
     padding-top: 10vh;
     justify-content: center;
     gap: 5rem;
-    background-color: #1a1a1a;
+    background-color: var(--background-color);
 }
 
 .section-pic-container {
@@ -273,7 +313,7 @@ section {
 
 #profile .profile-pic {
     border-radius: 50%;
-    border: #f7c857 1px ridge;
+    border: var(--border-color) 1px ridge;
 }
 
 .section-text {
@@ -298,12 +338,12 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: white;
+    color: var(--text-color-1);
 }
 
 .logo .icon {
     scale: 115%;
-    border: 1px #fff ridge;
+    border: 1px var(--border-color) ridge;
     margin-right: 2rem;
     justify-content: center;
     border-radius: 1px;
@@ -311,7 +351,7 @@ section {
 
 .logo .icon:hover {
     scale: 125%;
-    border: 1px #f7c857 ridge;
+    border: 1px var(--icon-hover-background-color) ridge;
     margin-right: 2rem;
     justify-content: center;
     border-radius: 50%;
@@ -346,7 +386,7 @@ section {
 }
 
 #about .details-container {
-    border-color: #f7c75788;
+    border-color: var(--border-color);
 }
 
 .about-container,
@@ -374,13 +414,13 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: wrap;
-    background: #0a192f;
+    background: var(--container-color);
     border-radius: 2rem;
-    border: #f7c857 2px solid;
-    border-color: #f7c857;
+    border: var(--border-color) 2px solid;
+    border-color: var(--border-color);
     text-align: center;
     justify-content: center;
-    color: #f7c857;
+    color: var(--text-color-2);
 
 }
 
@@ -404,15 +444,15 @@ section {
 }
 
 #skills .details-container {
-    border-color: #f7c75788;
+    border-color: var(--border-color);
 }
 
 #h3 {
-    color: #f7c857;
+    color: var(--text-color-3);
 }
 
 .skills-sub-title {
-    color: rgb(222, 222, 222);
+    color: var(--text-color-1);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -454,18 +494,18 @@ article .icon {
 }
 
 #projects .details-container {
-    background-color: #0a192f;
-    border-color: #f7c75788;
+    background-color: var(--container-color);
+    border-color: var(--border-color);
 }
 
 #projects .details-container:hover {
     scale: 103%;
     transition: 800ms;
-    box-shadow: 0 5px 20px 0 #f7c857;
+    box-shadow: 0 5px 20px 0 var(--border-color);
 }
 
 #projects .details-container h2 {
-    color: #f7c857;
+    color: var(--text-color-1);
 }
 
 #projects .about-container {
@@ -473,7 +513,6 @@ article .icon {
 }
 
 #projects .section-text-p1 {
-
     margin-top: 2rem; 
 }
 
@@ -484,8 +523,8 @@ article .icon {
 }
 
 .color-container {
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border-color: var(--border-color);
+    background: var(--container-color);
 }
 
 .project-img {
@@ -496,16 +535,12 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: black;
+    color: var(--text-color-1);
 }
 
 .project-btn {
-    color: black;
-    border: rgb(163,163,163);
-}
-
-.color-container {
-    background: #86b8ff;
+    color: var(--text-color-1);
+    border: var(--border-color);
 }
 
 /* CONTACT SECTION */
@@ -522,9 +557,9 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53,53,53) 2px inset;
-    border-color: #86b8ff;
-    background: #0a192f;
+    border: var(--border-color) 2px inset;
+    border-color: var(--border-color);
+    background: var(--container-color);
     margin: 2rem auto;
     padding: 0.5rem;
 }

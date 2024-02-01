@@ -18,6 +18,14 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <img
+                    id="modeToggle"
+                    class="icon color-icon" 
+                    src-light="." 
+                    src-dark="." 
+                    src="./assests/theme_light.png" alt="light theme icon">
+                </li>
             </ul>
         </div>
     </nav>
@@ -35,7 +43,14 @@
                 <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+                <li>
+                    <img
+                    id="modeToggle2"
+                    class="icon color-icon" 
+                    src-light="." 
+                    src-dark="." 
+                    src="./assests/theme_light.png" alt="light theme icon">
+                </li>            </div>
         </div>
 
     </nav>
@@ -54,15 +69,35 @@
                 <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Me</button>
             </div>
             <div id="social-container">
-                <img src="./assests/linkedin.png" alt="linkedin profile" class="icon" onclick="openInNewTab('https://www.linkedin.com/in/thomas-garrett/')">
-                <img src="./assests/github.png" alt="github profile" class="icon" onclick="openInNewTab('https://github.com/TomGarrett906')">
+                <img src="./assests/linkedin_light.png" 
+                src-light="./assests/linkedin_light.png" 
+                src-dark="./assests/linkedin_dark.png" 
+                alt="linkedin profile" 
+                class="icon linkedin-icon" 
+                onclick="openInNewTab('https://www.linkedin.com/in/thomas-garrett/')">
+                <img src="./assests/github_light.png"
+                src-light="./assests/github_light.png" 
+                src-dark="./assests/github_dark.png"  
+                alt="github profile" 
+                class="icon" 
+                onclick="openInNewTab('https://github.com/TomGarrett906')">
             </div>
         </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#about'">
+        <img src="./assests/downarrow_light.png"
+        src-light="./assests/downarrow_light.png" 
+        src-dark="./assests/downarrow_dark.png"
+        alt="arrow icon" 
+        class="arrow icon" 
+        onclick="location.href='./#about'">
     </section>
     <!-- ABOUT SECTION -->
     <section id="about">
-        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#profile'">
+        <img src="./assests/uparrow_light.png"
+        src-light="./assests/uparrow_light.png" 
+        src-dark="./assests/uparrow_dark.png"
+        alt="arrow icon" 
+        class="uparrow icon" 
+        onclick="location.href='./#profile'">
         <p class="section-text-p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -72,12 +107,20 @@
             <div class="about-details-container">
                 <div class="about-container">
                     <div class="details-container">
-                        <img src="./assests/tool.png" alt="certificate icon" class="icon">
+                        <img src="./assests/tool_light.png"
+                        src-light="./assests/tool_light.png" 
+                        src-dark="./assests/tool_dark.png"  
+                        alt="certificate icon" 
+                        class="icon">
                         <h3>Technical</h3>
                         <p>Drawing from my experience in music production, I've honed the ability to meticulously attend to small details with technical precision, discerning patterns seamlessly and logically, resulting in a high degree of accuracy.</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assests/creative.png" alt="education icon" class="icon">
+                        <img src="./assests/creative_light.png"
+                        src-light="./assests/creative_light.png" 
+                        src-dark="./assests/creative_dark.png"                           
+                        alt="education icon" 
+                        class="icon">
                         <h3>Creative</h3>
                         <p>Through exploration of diverse music styles, I've cultivated a mindset that thinks outside the box and ventures into uncharted territories, embracing my unique and original self. This creativity extends to a passion for making designs stand out.</p>
                     </div>
@@ -87,11 +130,21 @@
                 </div>
             </div>
         </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#skills'">
+        <img src="./assests/downarrow_light.png"
+        src-light="./assests/downarrow_light.png" 
+        src-dark="./assests/downarrow_dark.png"
+        alt="arrow icon" 
+        class="arrow icon" 
+        onclick="location.href='./#skills'">
     </section>
     <!-- SKILLS SECTION -->
     <section id="skills">
-        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#about'">
+        <img src="./assests/uparrow_light.png"
+        src-light="./assests/uparrow_light.png" 
+        src-dark="./assests/uparrow_dark.png"
+        alt="arrow icon" 
+        class="uparrow icon" 
+        onclick="location.href='./#about'">
         <p class="section-text-p1">Check Out My</p>
         <h1 class="title">Skills</h1>
         <div class="skills-details-container">
@@ -100,42 +153,66 @@
                     <h2 class="skills-sub-title">Languages</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assests/badges/html-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/html_light.png"
+                            src-light="./assests/html_light.png" 
+                            src-dark="./assests/html_dark.png" 
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>HTML</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/badges/css-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/css_light.png"
+                            src-light="./assests/css_light.png" 
+                            src-dark="./assests/css_dark.png"  
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>CSS</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests//badges/python-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests//badges/python_light.png"
+                            src-light="./assests/python_light.png" 
+                            src-dark="./assests/python_dark.png"  
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>Python</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/badges/sql-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/sql_light.png"
+                            src-light="./assests/sql_light.png" 
+                            src-dark="./assests/sql_dark.png" 
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>SQL</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/badges/javascript-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/javascript_light.png"
+                            src-light="./assests/javascript_light.png" 
+                            src-dark="./assests/javascript_dark.png"  
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>JavaScript</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/typescript.png" alt="badge icon" class="icon">
+                            <img src="./assests/typescriptt_light.png"
+                            src-light="./assests/typescriptt_light.png" 
+                            src-dark="./assests/typescriptt_dark.png"  
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>TypeScript</h3>
                                 <p>Experienced</p>
@@ -147,42 +224,66 @@
                     <h2 class="skills-sub-title">Technologies</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assests/github.png" alt="badge icon" class="icon">
+                            <img src="./assests/github_light.png"
+                            src-light="./assests/github_light.png" 
+                            src-dark="./assests/github_dark.png" 
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>GitHub</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/postgresql.png" alt="badge icon" class="icon">
+                            <img src="./assests/postgresql_light.png"
+                            src-light="./assests/postgresql_light.png" 
+                            src-dark="./assests/postgresql_dark.png"
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>PostgreSQL</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests//badges/flask-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests//badges/flask_light.png" 
+                            src-light="./assests/flask_light.png" 
+                            src-dark="./assests/flask_dark.png"
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>Flask</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/badges/nodejs-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/nodejs_light.png"
+                            src-light="./assests/nodejs_light.png" 
+                            src-dark="./assests/nodejs_dark.png"
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>Node JS</h3>
                                 <p>Certified</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/bootstrap.png" alt="badge icon" class="icon">
+                            <img src="./assests/bootstrap_light.png"
+                            src-light="./assests/bootstrap_light.png" 
+                            src-dark="./assests/bootstrap_dark.png" 
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>Bootstrap</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
-                            <img src="./assests/badges/react-certified.png" alt="badge icon" class="icon">
+                            <img src="./assests/badges/react_light.png"
+                            src-light="./assests/react_light.png" 
+                            src-dark="./assests/react_dark.png" 
+                            alt="badge icon" 
+                            class="icon">
                             <div>
                                 <h3>React</h3>
                                 <p>Certified</p>
@@ -192,11 +293,21 @@
                 </div>
             </div>
         </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#projects'">
+        <img src="./assests/downarrow_light.png"
+        src-light="./assests/downarrow_light.png" 
+        src-dark="./assests/downarrow_dark.png"
+        alt="arrow icon" 
+        class="arrow icon" 
+        onclick="location.href='./#projects'">
     </section>
     <!-- PROJECTS SECTION -->
     <section id="projects">
-        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#skills'">
+        <img src="./assests/uparrow_light.png"
+        src-light="./assests/uparrow_light.png" 
+        src-dark="./assests/uparrow_dark.png"
+        alt="arrow icon" 
+        class="uparrow icon" 
+        onclick="location.href='./#skills'">
         <p class="section-text-p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="skills-details-container ">
@@ -285,6 +396,18 @@
 
 
 
+                <!-- GIG TRAKR -->
+                <!-- <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assests/dj.png" alt="Gig Tracker" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Gig Trakr</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color2" onclick="location.href=''">GitHub Repository</button>
+                        <button class="btn btn-color2" onclick="location.href=''">Live Demo</button>
+                    </div>
+                </div>
+                </div> -->
 
 
 
@@ -294,33 +417,38 @@
 
 
             </div>
-            <!-- GIG TRAKR -->
-            <!-- <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assests/dj.png" alt="Gig Tracker" class="project-img">
-                </div>
-                <h2 class="skills-sub-title project-title">Gig Trakr</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color2" onclick="location.href=''">GitHub Repository</button>
-                    <button class="btn btn-color2" onclick="location.href=''">Live Demo</button>
-                </div>
-            </div>
-            </div> -->
         </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="arrow icon" onclick="location.href='./#contact'">
+        <img src="./assests/downarrow_light.png"
+        src-light="./assests/downarrow_light.png" 
+        src-dark="./assests/downarrow_dark.png"
+        alt="arrow icon" 
+        class="arrow icon" 
+        onclick="location.href='./#contact'">
     </section>
     <!-- CONTACT SECTION -->
     <section id="contact">
-        <img src="./assests/uparrow.png" alt="arrow icon" class="uparrow icon" onclick="location.href='./#projects'">
+        <img src="./assests/uparrow_light.png"
+        src-light="./assests/uparrow_light.png" 
+        src-dark="./assests/uparrow_dark.png"
+        alt="arrow icon" 
+        class="uparrow icon" 
+        onclick="location.href='./#projects'">
         <p class="section-text-p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assests/email.png" alt="email icon" class="icon contact-icon">
+                <img src="./assests/email_light.png"
+                src-light="./assests/email_light.png" 
+                src-dark="./assests/email_dark.png"  
+                alt="email icon" 
+                class="icon contact-icon">
                 <p><a href="mailto:TomGarrett906@gmail.com">TomGarrett906@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img src="./assests/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <img src="./assests/linkedin_light.png" 
+                src-light="./assests/linkedin_light.png" 
+                src-dark="./assests/linkedin_dark.png" 
+                alt="linkedin icon" class="icon contact-icon linkedin-icon">
                 <p><a onclick="openInNewTab('https://www.linkedin.com/in/thomas-garrett/')">LinkedIn</a></p>
             </div>
         </div>
