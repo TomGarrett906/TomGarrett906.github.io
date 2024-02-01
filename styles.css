@@ -4,41 +4,34 @@
 
 /* LIGHT MODE */
 :root {
-    --background-color: white;
-    --navbar-color: #1a1a1a;
-    --hamburger-menu-color: #86b8ff;
-    --border-color: #0a192f;
-    --container-color: #f7c857;
-    --button-color-1: #0a192f;
-    --button-color-2: #0a192f;
-    --button-hover-text: ;
-    --button-hover-color: ;
-    --text-color-1: #000;
-    --text-color-2: #1a1a1a;
-    --text-color-3: #fff;
-    --text-hover-color: #f7c857;
-    --icon-background-color: ;
-    --icon-hover-background-color: #f7c857;
-    
+    --white: #fff;
+    --light: #fff;
+    --lightgray: rgb(198, 198, 198);
+    --orange: #eaa400;
+    --darkgray: #7a7a7a;
+    --darkblue: #0a192f;
+    --dark: #1a1a1a;
+    --black: #000;
+
+    --white2black: var(--white);
+    --black2white: var(--black);
+    --light2dark: var(--light);
+    --dark2light: var(--dark);
+    --white2orange: var(--white);
+    --black2orange: var(--black);
+    --darkgray2lightgray: var(--darkgray);
 }
 
 /* DARK MODE */
 [theme="dark"] {
-    --background-color: #1a1a1a;
-    --navbar-color: #0a192f;
-    --hamburger-menu-color: #2d4567;
-    --border-color: #f7c857;
-    --container-color: #0a192f;
-    --button-color-1: #86b8ff;
-    --button-color-2: #86b8ff;
-    --button-hover-text: ;
-    --button-hover-color: ;
-    --text-color-1: #fff;
-    --text-color-2: rgb(198, 198, 198);
-    --text-color-3: #000;
-    --text-hover-color: #f7c857;
-    --icon-background-color: ;
-    --icon-hover-background-color: #f7c857;
+
+    --white2black: var(--black);
+    --black2white: var(--white);
+    --light2dark: var(--dark);
+    --dark2light: var(--light);
+    --white2orange: var(--orange);
+    --black2orange: var(--orange);
+    --darkgray2lightgray: var(--lightgray);
 }
 
 
@@ -50,7 +43,7 @@
 
 body {
     font-family: 'Exo 2', sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--light2dark);
 }
 
 html {
@@ -58,7 +51,8 @@ html {
 }
 
 p {
-    color: var(--text-color-2);
+    color: var(--darkgray2lightgray);
+    cursor: default;
 }
 
 /* TRANSITION */
@@ -85,8 +79,8 @@ nav {
     position: sticky;
     top: 0;
     border-bottom: var(--border-color) 2px solid;
-    background-color: var(--navbar-color);
-    color: var(--text-color-3);
+    background-color: var(--dark2light);
+    color: var(--black2white);
     z-index: 100;
 }
 
@@ -97,17 +91,19 @@ nav {
 }
 
 a {
-    color: var(--text-color-3);
+    color: var(--white2black);
     text-decoration: none;
-    /* text-decoration-color: var(--text-color-1); */
+
 }
 
+
+
 .hamburger-icon a:hover {
-    color: var(--icon-hover-background-color);
+    color: var(--orange);
 }
 
 a:hover {
-    color: var(--text-hover-color);
+    color: var(--orange);
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181.181,181);
@@ -116,17 +112,17 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    color: var(--white2black);
 }
 
 .logo:hover {
     cursor: pointer;
     scale: 110%;
     transition: 1000ms ease-in-out;
-    color: var(--text-hover-color);
+    color: var(--orange);
 }
 
 /* HAMBURGER MENU */
-
 #hamburger-nav {
     display: none; 
 }
@@ -143,17 +139,13 @@ a:hover {
     height: 24px;
     width: 30px;
     cursor: pointer;
-}
 
-.hamburger-icon:hover {
-    color: var(--icon-hover-background-color);
 }
-
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: var(--hamburger-menu-color);
+    background-color: var(--light2dark);
     transition: all 0.3 ease-in-out;
 }
 
@@ -161,7 +153,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0%;
-    background-color: var(--text-color-1);
+    background-color: var(--dark2light);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -173,7 +165,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--text-color-1);
+    /* color: var(--orange); */
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -185,15 +177,13 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
-    border: var(--text-hover-color) 2px outset;
+    /* border: var(--orange) 2px outset; */
     border-radius: 1rem;
     margin-top: 1rem;
     right: -2.75rem;
-    background: var(--hamburger-menu-color);
 }
 
 .menu-links.open a:hover {
-    color: var(--text-hover-color);
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
@@ -227,25 +217,34 @@ a:hover {
 
 
 /* ICONS */
-
 .icon {
     cursor: pointer;
     height: 2rem;
-    color: #f7c857;
-    background: var(--icon-background-color);
+    background: var(--light2dark);
     border-radius: 5px;
-  
+    background: none;
+}
+
+#about .icon {
+    cursor: default;
+}
+
+nav .icon {
+    background: none;
+}
+
+nav .icon:hover {
+    /* background: var(--dark2light); */
+    box-shadow: 0 2px 8px 0 var(--black2white);
 }
 
 .icon:hover {
     scale: 120%;
     transition-duration: 500ms;
-    background: var(--icon-hover-background-color);
+    box-shadow: 0 2px 8px 0 var(--black2white);
 }
 
 /* BUTTONS */
-
-
 .btn-container {
     display: flex;
     justify-content: center;
@@ -258,30 +257,27 @@ a:hover {
     padding: 1rem;
     width: 8rem;
     border-radius: 1.5rem;
-    
 }
 
 .btn-color1,
 .btn-color2 {
-    border: var(--border-color) 1px inset;
-    background: var(--navbar-color);
-    color: var(--text-color-3);
+    background: var(--light2dark);
+    color: var(--black2white);
 }
 
 .btn-color1:hover,
 .btn-color2:hover {
     cursor: pointer;
-    background-color: var(--button-hover-color);
-    border: var(--border-color) 1px inset;
-    color: var(--text-hover-color);
+    background-color: var(--black2white);
+    color: var(--text-color-3);
+    border: none;
     scale: 105%;
     transition: 800ms;
-    box-shadow: 0 2px 8px 0 var(--border-color);
+    box-shadow: 0 2px 8px 0 var(--black2white);
 }
 
 
 /* SECTIONS */
-
 section {
     height: 90vh;
     margin: 0 10rem;
@@ -294,14 +290,13 @@ section {
 }
 
 /* PROFILE SECTION */
-
 #profile {
     position: relative;
     display: flex;
     padding-top: 10vh;
     justify-content: center;
     gap: 5rem;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
 }
 
 .section-pic-container {
@@ -313,7 +308,7 @@ section {
 
 #profile .profile-pic {
     border-radius: 50%;
-    border: var(--border-color) 1px ridge;
+    /* border: var(--border-color) 1px ridge; */
 }
 
 .section-text {
@@ -338,12 +333,13 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: var(--text-color-1);
+    color: var(--black2white);
+    cursor: default;
 }
 
 .logo .icon {
     scale: 115%;
-    border: 1px var(--border-color) ridge;
+    /* border: 1px var(--black2white) ridge; */
     margin-right: 2rem;
     justify-content: center;
     border-radius: 1px;
@@ -351,7 +347,7 @@ section {
 
 .logo .icon:hover {
     scale: 125%;
-    border: 1px var(--icon-hover-background-color) ridge;
+    border: 1px var(--white2black) ridge;
     margin-right: 2rem;
     justify-content: center;
     border-radius: 50%;
@@ -368,7 +364,6 @@ section {
 
 
 /* ABOUT SECTION */
-
 #about {
     position: relative;
     padding-top: 10rem;
@@ -385,8 +380,9 @@ section {
     flex-direction: column;
 }
 
-#about .details-container {
-    border-color: var(--border-color);
+#about .details-container:hover {
+    transition: 800ms;
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
 .about-container,
@@ -414,13 +410,11 @@ section {
 .details-container {
     padding: 1.5rem;
     flex: wrap;
-    background: var(--container-color);
+    background: var(--light2dark);
     border-radius: 2rem;
-    border: var(--border-color) 2px solid;
-    border-color: var(--border-color);
     text-align: center;
     justify-content: center;
-    color: var(--text-color-2);
+    color: var(--white2black);
 
 }
 
@@ -437,25 +431,26 @@ section {
 }
 
 /* SKILLS SECTION */
-
 #skills {
     position: relative;
     padding-top: 10rem;
 }
 
-#skills .details-container {
-    border-color: var(--border-color);
+#skills .details-container:hover {
+    transition: 800ms;
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
-#h3 {
-    color: var(--text-color-3);
+h3 {
+    color: var(--black2white);
 }
 
 .skills-sub-title {
-    color: var(--text-color-1);
+    color: var(--darkgray2lightgray);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
+    cursor: default;
 }
 
 .skills-details-container {
@@ -487,25 +482,23 @@ article .icon {
 }
 
 /* PROJECTS SECTION  */
-
 #projects {
     position: relative;
     padding-top: 10vh;
 }
 
 #projects .details-container {
-    background-color: var(--container-color);
-    border-color: var(--border-color);
+    background-color: var(--light2dark);
 }
 
 #projects .details-container:hover {
     scale: 103%;
     transition: 800ms;
-    box-shadow: 0 5px 20px 0 var(--border-color);
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
 #projects .details-container h2 {
-    color: var(--text-color-1);
+    color: var(--black2white);
 }
 
 #projects .about-container {
@@ -523,7 +516,7 @@ article .icon {
 }
 
 .color-container {
-    border-color: var(--border-color);
+    /* border: var(--b) 1px ridge; */
     background: var(--container-color);
 }
 
@@ -535,7 +528,6 @@ article .icon {
 
 .project-title {
     margin: 1rem;
-    color: var(--text-color-1);
 }
 
 .project-btn {
@@ -544,7 +536,6 @@ article .icon {
 }
 
 /* CONTACT SECTION */
-
 #contact {
     position: relative;
     display: flex;
@@ -557,11 +548,23 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: var(--border-color) 2px inset;
-    border-color: var(--border-color);
-    background: var(--container-color);
     margin: 2rem auto;
     padding: 0.5rem;
+    box-shadow: 0 2px 8px 0 var(--black2white);
+}
+
+.contact-info-upper-container a{
+    color: var(--black2white);
+}
+
+.contact-info-upper-container a:hover{
+    color: var(--white2black);
+}
+
+.contact-info-upper-container:hover {
+    background: var(--black2white);
+    border: none;
+    box-shadow: 0 2px 8px 0 var(--black2white);
 }
 
 .contact-info-container {
@@ -572,7 +575,7 @@ article .icon {
     margin: 1rem;
 }
 
-.contact-info-container p {
+.contact-info-container p {  
     font-size: larger;
 }
 
@@ -582,7 +585,6 @@ article .icon {
 }
 
 /* FOOTER SECTION */
-
 footer {
     height: 26vh;
     margin: 0 1rem;
@@ -590,4 +592,12 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+footer a {
+    color: var(--black2white);
+}
+
+footer a:hover {
+    color: var(--orange)
 }
