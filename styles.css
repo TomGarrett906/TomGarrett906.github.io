@@ -5,12 +5,13 @@
 /* LIGHT MODE */
 :root {
     --white: #fff;
-    --light: #fff;
+    --light: #e8e8e8;
     --lightgray: rgb(198, 198, 198);
-    --orange: #eaa400;
+    --orange: #ca6c00;
     --darkgray: #7a7a7a;
     --darkblue: #0a192f;
-    --dark: #1a1a1a;
+    --dark: #0f213b;
+    --olddark: #1a1a1a;
     --black: #000;
 
     --white2black: var(--white);
@@ -20,6 +21,7 @@
     --white2orange: var(--white);
     --black2orange: var(--black);
     --darkgray2lightgray: var(--darkgray);
+    --btncolor1: #bbc9dc;
 }
 
 /* DARK MODE */
@@ -32,6 +34,7 @@
     --white2orange: var(--orange);
     --black2orange: var(--orange);
     --darkgray2lightgray: var(--lightgray);
+    --btncolor1: #1d3961;
 }
 
 
@@ -65,7 +68,6 @@ a, btn {
 nav, 
 .nav-links {
     display: flex;
-    
 }
 
 nav {
@@ -78,7 +80,7 @@ nav {
 #hamburger-nav {
     position: sticky;
     top: 0;
-    border-bottom: var(--border-color) 2px solid;
+    box-shadow: 0px 3px 20px 0px var(--black2white);
     background-color: var(--dark2light);
     color: var(--black2white);
     z-index: 100;
@@ -93,7 +95,6 @@ nav {
 a {
     color: var(--white2black);
     text-decoration: none;
-
 }
 
 
@@ -259,17 +260,31 @@ nav .icon:hover {
     border-radius: 1.5rem;
 }
 
-.btn-color1,
+.btn-color1 {
+    background: var(--btncolor1);
+    color: var(--black2white);
+}
+
+
 .btn-color2 {
     background: var(--light2dark);
     color: var(--black2white);
 }
 
-.btn-color1:hover,
+.btn-color1:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white2black);
+    border: none;
+    scale: 105%;
+    transition: 800ms;
+    box-shadow: 0 2px 8px 0 var(--black2white);
+}
+
 .btn-color2:hover {
     cursor: pointer;
     background-color: var(--black2white);
-    color: var(--text-color-3);
+    color: var(--white2black);
     border: none;
     scale: 105%;
     transition: 800ms;
@@ -296,7 +311,6 @@ section {
     padding-top: 10vh;
     justify-content: center;
     gap: 5rem;
-    /* background-color: var(--background-color); */
 }
 
 .section-pic-container {
@@ -306,9 +320,13 @@ section {
     margin: auto 0;
 }
 
+#profile .icon:hover {
+    box-shadow: 0 5px 20px 0 var(--orange);
+}
+
 #profile .profile-pic {
     border-radius: 50%;
-    /* border: var(--border-color) 1px ridge; */
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
 .section-text {
@@ -393,6 +411,7 @@ section {
 
 #about .profile-pic {
     border-radius: 2rem;
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
 .arrow {
@@ -531,8 +550,8 @@ article .icon {
 }
 
 .project-btn {
-    color: var(--text-color-1);
-    border: var(--border-color);
+    color: var(--black);
+    border: var(--black2white);
 }
 
 /* CONTACT SECTION */
@@ -558,11 +577,11 @@ article .icon {
 }
 
 .contact-info-upper-container a:hover{
-    color: var(--white2black);
+    color: var(--orange);
 }
 
 .contact-info-upper-container:hover {
-    background: var(--black2white);
+    background: var(--light2dark);
     border: none;
     box-shadow: 0 2px 8px 0 var(--black2white);
 }
