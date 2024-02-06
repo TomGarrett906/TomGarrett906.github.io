@@ -72,18 +72,36 @@
         margin-top: -15vh;
         top: 1px;
     }
+    #about .about-details-container{
+        margin-top: -9vh;
+
+    }
+    #about .text-container{
+        margin-top: -9vh;
+
+    }
     
     #skills {
-        margin-top: -12vh;
+        margin-top: -10vh;
     }
     #projects {
         margin-top: -12vh;
     }
-    #contact {
-        margin-top: -8vh;
+
+    #skills .about-container{
+        margin-top: -25vh;
     }
     #projects .about-container{
-        margin-top: -20vh;
+        margin-top: -120vh;
+    }
+    #builds {
+        margin-top: -120vh;
+    }
+    #builds .about-container{
+        margin-top: -16vh;
+    }
+    #contact {
+        margin-top: 8vh;
     }
     article {
         font-size: 1rem;
