@@ -223,11 +223,17 @@ a:hover {
     top: 17px;
 }
 
+#modeToggle {
+    position: absolute;
+    scale: 80%;
+    right: 30px;
+}
 #modeToggle2 {
     position: relative;
     left: 50px;
     text-decoration: none;
     bottom: 10px;
+    scale: 75%;
 }
 
 ::marker {
