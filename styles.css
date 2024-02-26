@@ -114,7 +114,9 @@ a:hover {
 .logo {
     font-size: 2rem;
     color: var(--white2black);
+
 }
+
 
 .logo:hover {
     cursor: pointer;
@@ -214,6 +216,24 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+.hamburger-icon {
+    position: relative;
+    top: 17px;
+}
+
+#modeToggle2 {
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    bottom: 10px;
+}
+
+::marker {
+    all: unset;
+    color: var(--dark2light);
+    content: '\2024'; 
 }
 
 
@@ -564,9 +584,9 @@ article .icon {
     padding-top: 20vh;
 }
 
-#builds .section-text-p1 {
+/* #builds .section-text-p1 {
 
-}
+} */
 
 
 /* CONTACT SECTION */
