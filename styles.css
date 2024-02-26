@@ -666,3 +666,6 @@ footer a {
 footer a:hover {
     color: var(--orange)
 }
+footer ::marker {
+    color: var(--light2dark);
+}
