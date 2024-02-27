@@ -1,6 +1,7 @@
 /* GENERAL STYLES */
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* LIGHT MODE */
 :root {
@@ -114,7 +115,8 @@ a:hover {
 .logo {
     font-size: 2rem;
     color: var(--white2black);
-
+    font-family: "Lobster", sans-serif;
+    font-weight: 200;
 }
 
 
@@ -258,11 +260,14 @@ a:hover {
 
 nav .icon {
     background: none;
+    border-radius: 50%;
 }
 
 nav .icon:hover {
     /* background: var(--dark2light); */
-    box-shadow: 0 2px 8px 0 var(--black2white);
+    box-shadow: 0 0px 8px 0 var(--white2black);
+    background: var(--orange);
+    transition: 500ms;
 }
 
 .icon:hover {
@@ -347,7 +352,7 @@ section {
 }
 
 #profile .icon:hover {
-    box-shadow: 0 5px 20px 0 var(--orange);
+    box-shadow: 0 5px 20px 0 var(--black2white);
 }
 
 #profile .profile-pic {
