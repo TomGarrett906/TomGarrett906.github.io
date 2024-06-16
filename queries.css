@@ -24,7 +24,7 @@
         display: block;
     }
     #projects .about-container {
-        scale: 50%
+        scale: 80%
     }
     .arrow,
     .uparrow {
@@ -78,7 +78,6 @@
     }
     #about .text-container{
         margin-top: -9vh;
-
     }
     
     #skills {
@@ -114,7 +113,6 @@
     .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
-        
     }
     .contact-info-container {
         margin: 0;
